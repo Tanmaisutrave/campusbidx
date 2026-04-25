@@ -57,6 +57,11 @@ app.use('/api/bids', require('./routes/bids'));
 app.use('/api/wallet', require('./routes/wallet'));
 app.use('/api/admin', require('./routes/admin'));
 
+// Root route
+app.get('/', (req, res) => {
+  res.send('CampusBidX API is running 🚀');
+});
+
 // Health check
 app.get('/api/health', (req, res) =>
   res.json({ status: 'ok', message: 'CampusBid API is running' })
