@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Environment variables (never commit secrets)
+.env
+.env.*
+!.env.example
+
+# Build outputs
+build/
+dist/
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Frontend: Bing image search cache downloaded during development
+# (only 7187PNsuDxL.jpg is a real project asset used in demoAuctions.js)
+frontend/src/assets/calculater.html
+frontend/src/assets/calculater_files/*
+!frontend/src/assets/calculater_files/7187PNsuDxL.jpg
+
+# Vite boilerplate SVGs not used by the project
+frontend/src/assets/react.svg
+frontend/src/assets/vite.svg
